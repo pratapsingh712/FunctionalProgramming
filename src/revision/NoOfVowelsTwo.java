@@ -18,10 +18,11 @@ public class NoOfVowelsTwo {
 
     private static long countVowel(String words) {
 
-        Character Character;
+        String vowel = "aeiou";
+
         return words.toLowerCase()
                 .chars()
-                .filter(chr->"aeiou".indexOf(chr)!=-1)
+                .filter(character -> vowel.indexOf(character)!=-1)
                 .count();
     }
 }
